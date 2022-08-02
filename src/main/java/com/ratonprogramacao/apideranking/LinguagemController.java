@@ -15,16 +15,22 @@ public class LinguagemController {
 	private LinguagemRepository repositorio;
 
 	/*
+	 * Teste do Spring
+	 * 
 	 * @GetMapping("/linguagem-preferida") public String
 	 * processaLinguagemPreferida() { return "Oi, Java!"; }
 	 */
 
+	// A anotação /linguagens define o fim do link a ser usado para a visualização
+	// da API. Modificar como for necessário
 	@GetMapping("/linguagens")
 	public List<Linguagem> obterLinguagens() {
 		List<Linguagem> linguagens = repositorio.findAll();
 		return linguagens;
 	}
 
+	// A anotação /linguagens define o fim do link a ser usado para a visualização
+	// da API. Modificar como for necessário
 	@PostMapping("/linguagens")
 	public Linguagem cadastrarLinguagem(@RequestBody Linguagem linguagem) {
 		Linguagem linguagemSalva = repositorio.save(linguagem);
