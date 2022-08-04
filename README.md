@@ -24,19 +24,26 @@
 
 2. Neste projeto, o app lê os atributos title, image e ranking. Caso queira adicionar ou remover atributos do seu arquivo JSON, não se esqueça de alterar os atributos nessa classe também, assim como seus retornos no construtor Linguagem.
 
-    ![Collection name](https://imgur.com/ltPytM7l.png)
+    ![Atributes](https://imgur.com/ltPytM7l.png)
     
-    ![Collection name](https://imgur.com/OyOGO0El.png)
+    ![Atributes in constructor](https://imgur.com/OyOGO0El.png)
 
 3. De acordo com a necessidade do usuário, pode-se estar mudando o caminho do link pela classe LinguagemController.java, nas anotações GetMapping e PostMapping. Apenas trocar /linguagens por /seu-link-aqui.
 
-    ![Collection name](https://imgur.com/gEdm0wGl.png)
+    ![Anotations atributes](https://imgur.com/gEdm0wGl.png)
 
 4. Pelo projeto ter sido criado e compilado para funcionar no Java 18, pode ser que algumas máquinas dêem erro de versão, pois o Java 17 não conseguiria rodar pelo prompt de comando, por exemplo. Para resolver isso, setar o JAVA_HOME da sua máquina para usar o Java 18. Ilustração do erro abaixo:
 
-    ![Collection name](https://imgur.com/hObngzwl.png)
+    ![Java version error](https://imgur.com/hObngzwl.png)
 
+5. Com tudo configurado de acordo, coloque seu username e password específicos daquela collection no MongoDB no arquivo application.properties.
 
+    ![Username and password in application.properties](https://imgur.com/k3HiScKl.png)
+    
+6. Com tudo configurado de acordo, na sua IDE, rode o arquivo ApiDeRankingApplication.
+
+7. Após isso, é só abrir seu navegador de escolha e ir no link definido para visualizar a API. No meu caso, localhost:8080 (máquina local).
+    
 <strong>Todos os agradecimentos ao grupo Alura pela oportunidade de projeto.</strong>
 
 - Código feito no evento Imersão Java, do grupo Alura.
